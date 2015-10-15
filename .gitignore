@@ -1,8 +1,0 @@
-._*
-.htaccess
-uploads/*
-database.php
-config.php
-gocart.php
-gocart/logs/*
-*.bak
