@@ -162,10 +162,11 @@
 						<ul class="nav navbar-nav navbar-right text-center def-list">
 							<?php if($this->Customer_model->is_logged_in(false, false)):?>
 								<li>
-									<a href="<?php echo base_url('/secure/my_account');?>">WELCOME, <?php echo strtoupper($this->customer['firstname']);?>!</a>
+									<!-- <a href="<?php echo base_url('/secure/my_account');?>">WELCOME, <?php echo strtoupper($this->customer['firstname']);?>!</a> -->
+									<a href="<?php echo base_url('/secure/my_account');?>">PROFILE</a>
 								</li>
 								<li>
-									<a href="<?php echo base_url('/secure/logout');?>" class="active">SIGN OUT</a>
+									<a href="<?php echo base_url('/secure/logout');?>">SIGN OUT</a>
 								</li>
 								<?php else:?>
 								<li>

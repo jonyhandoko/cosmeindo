@@ -201,18 +201,30 @@ body {
 	text-align: center;
 }
 
-.message_product {
-	background-color: green;
-	font-size: 14px;
-	color: white;
-	font-weight: bold;
+.message-product {
+	margin: 0px 30px 40px;
 	padding: 5px 0;
-	margin: 10px 25px;
+	background-color: #00B286;
+	font-size: 16px;
+	color: white;
+	text-align: center;
 }
-.message_product a {
-	color: #f1a744;
+.message-product a {
+	color: #FFD200;
+}
+.message-product a:hover,
+.message-product a:focus {
+	color: #FFD200;
 }
 
+.my-account {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.my-account .edit.change-mode-box {
+	display: none;
+}
 
 /* Global */
 /*

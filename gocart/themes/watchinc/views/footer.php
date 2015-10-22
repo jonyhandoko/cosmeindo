@@ -39,12 +39,12 @@
 							<div class="col-sm-4">
 								<p class="lead">NEWSLETTER</p>
 								<p>SIGN UP FOR UPDATES AND SPECIAL OFFERS</p>
-								<form class="form-inline footer-form">
+								<div class="form-inline footer-form">
 									<div class="form-group">
 										<input type="email" class="form-control">
 									</div>
 									<button type="submit" class="btn btn-black">SIGN UP</button>
-								</form>
+								</div>
 							</div>
 						</div>
 					</div>

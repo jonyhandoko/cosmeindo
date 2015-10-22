@@ -27,7 +27,7 @@
 							<div class="row">
 								<?php
 									if ($this->session->flashdata('message_product')) {
-										echo '<div class="col-sm-12"><center><div class="message_product">'.$this->session->flashdata('message_product').'</center></div></div>';
+										echo '<div class="col-sm-12"><div class="message-product">'.$this->session->flashdata('message_product').'</div></div>';
 									}
 								?>
 								<div class="col-sm-7">

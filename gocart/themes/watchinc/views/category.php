@@ -103,15 +103,15 @@
 												</div>
 										<?php endforeach;?>
 									</div>
+									<div class="filter-product"></div>
+									<div class="filter-container">
+										<?php
+										$current_url = explode("?", $_SERVER['REQUEST_URI']);
+										?>
+										<a href="<?php echo $current_url[0] ;?>" class="filter-box btn-clear">CLEAR ALL</a>
+										<div class="filter-list"> </div>
+									</div>
 								<?php endif;?>
-							</div>
-							<div class="filter-product"></div>
-							<div class="filter-container">
-								<?php
-								$current_url = explode("?", $_SERVER['REQUEST_URI']);
-								?>
-								<a href="<?php echo $current_url[0] ;?>" class="filter-box btn-clear">CLEAR ALL</a>
-								<div class="filter-list"> </div>
 							</div>
 						</div>
 						<div class="def-temp">
