@@ -44,17 +44,19 @@
 	function searchMan() {
 		var d = document, s = d.getElementById('search'), sb = d.getElementsByClassName('search-block')[0], sc = sb.getElementsByClassName('search-close')[0], sfc = sb.getElementsByClassName('form-control')[0];
 
-		s.addEventListener('click', function(e) {
-			e.preventDefault();
-			sb.className = 'search-block opened';
-			sfc.focus();
-		});
+		if (s && sc) {
+			s.addEventListener('click', function(e) {
+				e.preventDefault();
+				sb.className = 'search-block opened';
+				sfc.focus();
+			});
 
-		sc.addEventListener('click', function(e) {
-			e.preventDefault();
-			sb.className = 'search-block closed';
-			sfc.value = '';
-		});
+			sc.addEventListener('click', function(e) {
+				e.preventDefault();
+				sb.className = 'search-block closed';
+				sfc.value = '';
+			});
+		}
 	}
 	searchMan();
 

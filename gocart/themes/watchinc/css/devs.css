@@ -1,16 +1,7 @@
 /* Devs Stylesheet */
 
-@font-face {
-	font-family: 'Lato';
-	src: url('../fonts/Lato-Regular.ttf') format('truetype');
-}
-@font-face {
-	font-family: 'Lato';
-	src: url('../fonts/Lato-Light.ttf') format('truetype');
-	font-weight: 300;
-}
 body {
-	font-family: 'Lato';
+	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 }
 a:hover,
@@ -97,11 +88,12 @@ a:focus {
 	}
 }
 .def-list a {
-	color: #000000 !important;
+	font-weight: 300;
+	color: #666666 !important;
 }
 .def-list a:hover,
 .def-list a:focus {
-	color: #f1a744 !important;
+	color: #f04661 !important;
 }
 .def-badge {
 	font-family: 'Lato';
@@ -115,12 +107,15 @@ a:focus {
 .def-content .container-fluid {
 	max-width: 1170px;
 }
-.def-header{
+.def-header {
 	background-color: transparent;
-	border-top: 4px solid #f1a744;
+	border-top: 4px solid #000;
 }
 .def-header .navbar-default {
 	background-color: transparent;
+}
+.def-header .navbar-header {
+  width: 100%;
 }
 .def-header .navbar-brand {
 	padding: 8px 0;
@@ -303,6 +298,7 @@ a:focus {
 		left: 0;
 		top: 0;
 		right: 0;
+    width: 100%;
 	}
 	.def-header .navbar-brand > img {
 		max-width: 200px;
