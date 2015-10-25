@@ -9,7 +9,7 @@
 								<img src="<?php echo base_url('images/watchinc/brand-small.png');?>" class="img-responsive brand">
 							</div>
 							<div class="col-sm-2">
-								<p class="lead">ABOUT WATCH INC</p>
+								<p class="lead">ABOUT COSME INDO</p>
 								<ul class="list-unstyled def-list">
 									<li><p><a href="">NEW COLLECTIONS</a></p></li>
 									<li><p><a href="">MEN'S WATCHES</a></p></li>
@@ -32,8 +32,8 @@
 								<ul class="list-unstyled">
 									<li><p class="text-icon"><img src="<?php echo base_url('images/watchinc/icon/iphone.png');?>"> (+62)85779555903</p></li>
 									<li><p class="text-icon"><img src="<?php echo base_url('images/watchinc/icon/qrcode.png');?>"> 12345</p></li>
-									<li><p class="text-icon"><img src="<?php echo base_url('images/watchinc/icon/topic.png');?>"> Watchnic</p></li>
-									<li><p class="text-icon"><img src="<?php echo base_url('images/watchinc/icon/message.png');?>"> info@watchnic.com</p></li>
+									<li><p class="text-icon"><img src="<?php echo base_url('images/watchinc/icon/topic.png');?>"> Cosme Indo</p></li>
+									<li><p class="text-icon"><img src="<?php echo base_url('images/watchinc/icon/message.png');?>"> info@cosmeindo.com</p></li>
 								</ul>
 							</div>
 							<div class="col-sm-4">
@@ -53,7 +53,7 @@
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-sm-6">
-								<p>Copyright 2015 Watch Inc. All Rights Reserved.</p>
+								<p>Copyright 2015 Cosme Indo. All Rights Reserved.</p>
 							</div>
 							<div class="col-sm-6">
 								<ul class="list-inline socials">
