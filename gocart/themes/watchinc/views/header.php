@@ -35,14 +35,14 @@
 					<nav class="navbar navbar-default navbar-static-top">
 						<div class="navbar-collapse collapse">
 							<ul class="nav navbar-nav navbar-left">
-								<li><a href="sign_in" class="bordered-menu">SIGN IN</a></li>
-								<li><a href="register" class="bordered-menu">REGISTER</a></li>
-								<li><a href="my_account">MY ACCOUNT</a></li>
+								<li><a href="<?php echo base_url('/secure/login');?>" class="bordered-menu">SIGN IN</a></li>
+								<li><a href="<?php echo base_url('/secure/login');?>" class="bordered-menu">REGISTER</a></li>
+								<li><a href="<?php echo base_url('/secure/my_account');?>">MY ACCOUNT</a></li>
 								<li><a href="my_wishlist">MY WISH LIST</a></li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="search"><i class="header-icon icon ion-ios-search-strong"></i>SEARCH</a></li>
-								<li><a href="shopping_cart"><i class="header-icon icon ion-bag"></i>SHOPPING CART</a></li>
+								<li><a id="search"><i class="header-icon icon ion-ios-search-strong"></i>SEARCH</a></li>
+								<li><a href="<?php echo base_url('/cart/view_cart');?>"><i class="header-icon icon ion-bag"></i>SHOPPING CART</a></li>
 								<li><span class="number-indicator">20</span></li>
 							</ul>
 						</div>
