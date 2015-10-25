@@ -111,6 +111,9 @@ a:focus {
 	background-color: transparent;
 	border-top: 4px solid #000;
 }
+.def-header .navbar {
+	margin-bottom: 0;
+}
 .def-header .navbar-default {
 	background-color: transparent;
 }
@@ -226,6 +229,10 @@ a:focus {
 	margin-bottom: 6px;
 	max-width: 24px;
 }
+.def-header .first-block {
+	background-color: #000;
+	color: #fff;
+}
 
 .def-footer {
 	background-color: #f7f7f7;
@@ -269,7 +276,7 @@ a:focus {
 .def-footer .rights {
 	padding: 16px 0;
 	color: #ffffff;
-	background-color: #f1a744;
+	background-color: #f04661;
 	text-align: center;
 }
 .def-footer .rights p {
@@ -321,9 +328,6 @@ a:focus {
 		margin: 0;
 		position: static;
 	}
-	.def-header .navbar-default .navbar-collapse:last-child {
-		border-top: 1px solid #e7e7e7;
-	}
 	.def-header .navbar-default .navbar-right-in {
 		padding: 26px 0px;
 	}
@@ -366,11 +370,12 @@ a:focus {
 	}
 	.def-footer .brand {
 		padding: 48px 0;
+    max-width: 144px;
 	}
 }
 
 .def-content .banners {
-	margin-bottom: 60px;  
+	margin-bottom: 20px;
 }
 .def-content .banner-big img,
 .def-content .banner-small img {
@@ -398,6 +403,45 @@ a:focus {
 	.def-header .navbar-nav > li > a.active {
 		color: #f1a744 !important;
 	}
+	.def-header .first-block .navbar {
+		min-height: auto;
+	}
+	.def-header .first-block .navbar-nav {
+		margin-top: 0;
+		margin-bottom: 4px;
+	}
+	.def-header .first-block .navbar-nav > li > a {
+		color: #fff;
+		font-weight: 300;
+	}
+	.def-header .first-block .navbar-nav > li > a:hover,
+	.def-header .first-block .navbar-nav > li > a:focus,
+	.def-header .first-block .navbar-nav > li > a.active {
+		color: #ed4964;
+		border-color: #ed4964;
+	}
+	.def-header .first-block .navbar-nav > li > .bordered-menu {
+    margin: 3px 8px;
+    border: 1px solid #fff;
+    padding: 4px 20px!important;
+	}
+	.def-header .header-icon {
+		margin-right: 10px;
+    font-size: 22px;
+    vertical-align: middle;
+	}
+	.def-header .number-indicator {
+    border-radius: 50%;
+    background: white;
+    width: 28px;
+    height: 28px;
+    color: black;
+    float: left;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 3px;
+	}
 }
 
 @media (max-width: 480px) {
@@ -422,7 +466,7 @@ a:focus {
 }
 
 .def-temp .head {
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 }
 .def-temp .head .title {
 	margin-top: 0;
@@ -437,21 +481,28 @@ a:focus {
 .orange {
 	color:  #f1a744;
 }
+.def-temp .pink {
+	color: #cc3333;
+}
+.pink {
+	color:  #cc3333;
+}
 .thumbs .row {
-	margin-right: -5px;
-	margin-left: -5px;
+	/* margin-right: -5px;
+	margin-left: -5px; */
 }
 .thumbs .row > [class^="col"] {
-	padding-right: 5px;
-	padding-left: 5px;
+	padding-right: 0;
+	padding-left: 0;
 }
 .thumbs .thumb {
 	display: block;
 	margin-bottom: 15px;
+	padding: 10px;
 	border-bottom: 1px solid #eeeeee;
 }
 .thumbs .thumb .image {
-	padding: 15px;
+	/* padding: 15px; */
 }
 .thumbs .thumb .image img {
 	margin: 0 auto;
@@ -486,10 +537,14 @@ a:focus {
 }
 .owl-banner .owl-theme .owl-controls .owl-buttons div {
 	margin: 0;
-	padding: 0 16px;
-	border-radius: 0;
+	padding: 0;
 	font-size: 36px;
-	background-color: #000000;
+	color: #000000;
+	background-color: #fff;
+	opacity: 1;
+	border-radius: 0;
+	width: 48px;
+	height: 48px;
 }
 .owl-banner .owl-theme .owl-controls .owl-buttons .owl-prev {
 	float: left;
@@ -498,24 +553,37 @@ a:focus {
 	float: right;
 }
 .owl-featured .owl-wrapper-outer {
-	padding: 5px;
+	/* padding: 5px; */
 }
 .owl-featured .owl-item .thumb {
-	margin-right: 5px;
-	margin-left: 5px;
+	/* margin-right: 5px;
+	margin-left: 5px; */
+	padding: 10px;
 }
 .owl-featured .owl-theme .owl-controls {
 	margin-top: 0;
 	position: absolute;
-	right: 0;
-	top: -60px;
+	top: 90px;
+	width: 100%;
 }
 .owl-featured .owl-theme .owl-controls .owl-buttons div {
-	margin: 0 2px;
+	margin: 0;
 	padding: 0;
 	font-size: 36px;
 	color: #000000;
-	background-color: transparent;
+	background-color: #fff;
+	opacity: 1;
+	border-radius: 0;
+	width: 48px;
+	height: 48px;
+}
+.owl-featured .owl-theme .owl-controls .owl-buttons .owl-prev {
+	float: left;
+	margin-left: 20px;
+}
+.owl-featured .owl-theme .owl-controls .owl-buttons .owl-next {
+	float: right;
+	margin-right: 20px;
 }
 
 @media (min-width: 768px) {
@@ -541,7 +609,7 @@ a:focus {
 	margin-left: 60px;
 }
 .featured-tabs .thumbs .thumb .image {
-	padding: 25px;
+	/* padding: 25px; */
 }
 .news .thumbs .thumb,
 .news .thumbs .thumb .image {

@@ -30,36 +30,57 @@
 	<body>
 
 		<div class="def-header">
-			<div class="container-fluid">
-				<nav class="navbar navbar-default navbar-static-top">
-					<div class="navbar-header">
-						<button class="navbar-toggle navbar-toggle-left collapsed" data-toggle="collapse" data-target="#category" aria-expanded="false" aria-controls="category">
-							<img alt="Menu" src="<?php echo base_url('/images/watchinc/icon/menu.png');?>">
-						</button>
-						<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#advance" aria-expanded="false" aria-controls="advance">
-							<img alt="Bag" src="<?php echo base_url('/images/watchinc/icon/shopping-bag.png');?>">
-						</button>
-						<a class="navbar-brand" href="<?php echo base_url('/');?>">
-							<img alt="Watchinc" src="<?php echo base_url('/images/watchinc/brand.png');?>" class="img-responsive">
-						</a>
-					</div>
-					<div id="advance" class="navbar-collapse collapse">
-					</div>
-					<div id="category" class="navbar-collapse yamm collapse">
-						<ul class="nav navbar-nav text-center def-list">
-							<li><a href="<?php echo base_url('/make_up');?>">MAKE UP</a></li>
-							<li><a href="<?php echo base_url('/skin_care');?>">SKIN CARE</a></li>
-							<li><a href="<?php echo base_url('/fragnance');?>">FRAGNANCE</a></li>
-							<li><a href="<?php echo base_url('/bath_and_body');?>">BATH AND BODY</a></li>
-							<li><a href="<?php echo base_url('/nails');?>">NAILS</a></li>
-							<li><a href="<?php echo base_url('/hair');?>">HAIR</a></li>
-							<li><a href="<?php echo base_url('/men');?>">MEN</a></li>
-							<li><a href="<?php echo base_url('/gifts');?>">GIFTS</a></li>
-							<li><a href="<?php echo base_url('/sale');?>">SALE</a></li>
-							<li><a href="<?php echo base_url('/brands');?>">BRANDS</a></li>
-						</ul>
-					</div>
-				</nav>
+			<div class="first-block">
+				<div class="container-fluid">
+					<nav class="navbar navbar-default navbar-static-top">
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav navbar-left">
+								<li><a href="sign_in" class="bordered-menu">SIGN IN</a></li>
+								<li><a href="register" class="bordered-menu">REGISTER</a></li>
+								<li><a href="my_account">MY ACCOUNT</a></li>
+								<li><a href="my_wishlist">MY WISH LIST</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="search"><i class="header-icon icon ion-ios-search-strong"></i>SEARCH</a></li>
+								<li><a href="shopping_cart"><i class="header-icon icon ion-bag"></i>SHOPPING CART</a></li>
+								<li><span class="number-indicator">20</span></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="second-block">
+				<div class="container-fluid">
+					<nav class="navbar navbar-default navbar-static-top">
+						<div class="navbar-header">
+							<button class="navbar-toggle navbar-toggle-left collapsed" data-toggle="collapse" data-target="#category" aria-expanded="false" aria-controls="category">
+								<img alt="Menu" src="<?php echo base_url('/images/watchinc/icon/menu.png');?>">
+							</button>
+							<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#advance" aria-expanded="false" aria-controls="advance">
+								<img alt="Bag" src="<?php echo base_url('/images/watchinc/icon/shopping-bag.png');?>">
+							</button>
+							<a class="navbar-brand" href="<?php echo base_url('/');?>">
+								<img alt="Watchinc" src="<?php echo base_url('/images/watchinc/brand.png');?>" class="img-responsive">
+							</a>
+						</div>
+						<div id="advance" class="navbar-collapse collapse">
+						</div>
+						<div id="category" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav text-center def-list">
+								<li><a href="<?php echo base_url('/make_up');?>">MAKE UP</a></li>
+								<li><a href="<?php echo base_url('/skin_care');?>">SKIN CARE</a></li>
+								<li><a href="<?php echo base_url('/fragnance');?>">FRAGNANCE</a></li>
+								<li><a href="<?php echo base_url('/bath_and_body');?>">BATH AND BODY</a></li>
+								<li><a href="<?php echo base_url('/nails');?>">NAILS</a></li>
+								<li><a href="<?php echo base_url('/hair');?>">HAIR</a></li>
+								<li><a href="<?php echo base_url('/men');?>">MEN</a></li>
+								<li><a href="<?php echo base_url('/gifts');?>">GIFTS</a></li>
+								<li><a href="<?php echo base_url('/sale');?>">SALE</a></li>
+								<li><a href="<?php echo base_url('/brands');?>">BRANDS</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
 			</div>
 			<div class="search-block closed">
 				<a class="search-close">CLOSE</a>

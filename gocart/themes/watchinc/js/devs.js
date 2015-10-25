@@ -9,7 +9,7 @@
           singleItem : true,
           autoPlay : 3000,
           navigation : true,
-          navigationText : ['<','>'],
+          navigationText : ['<span class="button-carousel-custom ion-ios-arrow-left"></span>','<span class="button-carousel-custom ion-ios-arrow-right"></span>'],
           pagination : false
         });
 
@@ -22,7 +22,7 @@
           itemsDesktopSmall : [979,3],
           autoPlay : 3000,
           navigation : true,
-          navigationText : ['<','>'],
+          navigationText : ['<span class="button-carousel-custom ion-ios-arrow-left"></span>','<span class="button-carousel-custom ion-ios-arrow-right"></span>'],
           pagination : false
         });
 
