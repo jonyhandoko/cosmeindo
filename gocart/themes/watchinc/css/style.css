@@ -38,8 +38,8 @@ body {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	background-color: #000000;
-	border-bottom: 4px solid #f1a744;
+	background-color: #fff;
+	border-bottom: 4px solid #000;
 	overflow: hidden;
 	z-index: 1001;
 	transition-property: all;

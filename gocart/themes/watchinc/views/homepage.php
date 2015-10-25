@@ -31,7 +31,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="banner-small">
+					<!-- <div class="banner-small">
 						<div class="row">
 							<div class="col-sm-6">
 								<img src="images/watchinc/banner/small-1.jpg" class="img-responsive">
@@ -43,7 +43,7 @@
 								<img src="images/watchinc/banner/small-3.jpg" class="img-responsive">
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="featured">
@@ -52,13 +52,12 @@
 						<div class="head">
 							<div class="row">
 								<div class="col-xs-12">
-									<img src="images/watchinc/watch.png" class="img-responsive pull-left">
-									<h3 class="title"><span class="orange">FEATURED</span> PRODUCTS</h3>
+									<img src="images/watchinc/title/make-up.jpg" class="img-responsive pull-left">
 								</div>
 							</div>
 						</div>
 						<div class="thumbs owl-featured">
-							<div id="owl-featured" class="row owl-carousel">
+							<div id="owl-featured" class="owl-carousel">
 								<?php if(count($products) > 0):?>
 									<?php for($j=0;$j<1;$j++){?>
 									<?php
@@ -84,10 +83,10 @@
 										<div class="image">
 											<?php echo $photo; ?>
 										</div>
-										<div class="desc">
+										<div class="desc text-center">
 											<p class="brand-name"><?php echo strtoupper($product->brand['brand_name']);?></p>
 											<p class="name"><?php echo $product->name;?></p>
-											<p class="orange"><?php echo format_currency($product->price); ?></p>
+											<p class="pink"><?php echo format_currency($product->price); ?></p>
 										</div>
 									</a>
 									<?php endforeach; ?>
@@ -104,8 +103,7 @@
 						<div class="head">
 							<div class="row">
 								<div class="col-xs-12">
-									<img src="images/watchinc/watch.png" class="img-responsive pull-left">
-									<h3 class="title"><span class="orange">MEN</span> WATCHES</h3>
+									<img src="images/watchinc/title/make-up.jpg" class="img-responsive pull-left">
 								</div>
 							</div>
 						</div>
@@ -136,10 +134,10 @@
 											<div class="image">
 												<?php echo $photo; ?>
 											</div>
-											<div class="desc">
+											<div class="desc text-center">
 												<p class="brand-name"><?php echo strtoupper($menwatch->brand['brand_name']);?></p>
 												<p class="name"><?php echo $menwatch->name;?></p>
-												<p class="orange"><?php echo format_currency($menwatch->price); ?></p>
+												<p class="pink"><?php echo format_currency($menwatch->price); ?></p>
 											</div>
 										</a>
 									</div>
@@ -159,8 +157,7 @@
 						<div class="head">
 							<div class="row">
 								<div class="col-xs-12">
-									<img src="images/watchinc/watch.png" class="img-responsive pull-left">
-									<h3 class="title"><span class="orange">LATEST</span> NEWS</h3>
+									<img src="images/watchinc/title/make-up.jpg" class="img-responsive pull-left">
 								</div>
 							</div>
 						</div>
@@ -179,7 +176,7 @@
 											<div class="image">
 												<img src="<?php echo $blog->thumbsmall;?>" class="img-responsive">
 											</div>
-											<div class="desc">
+											<div class="desc text-center">
 												<p class="name"><?php echo $blog->title;?></p>
 												<p class="detail"><?php echo $blog->excerpt;?></p>
 											</div>
