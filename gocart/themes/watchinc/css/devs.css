@@ -408,6 +408,7 @@ a:focus {
 	}
 	.def-header .first-block .navbar-nav {
 		margin-top: 0;
+		margin-top: 4px;
 		margin-bottom: 4px;
 	}
 	.def-header .first-block .navbar-nav > li > a {
@@ -419,6 +420,7 @@ a:focus {
 	.def-header .first-block .navbar-nav > li > a.active {
 		color: #ed4964;
 		border-color: #ed4964;
+		cursor: pointer;
 	}
 	.def-header .first-block .navbar-nav > li > .bordered-menu {
     margin: 3px 8px;

@@ -38,8 +38,8 @@ body {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	background-color: #fff;
-	border-bottom: 4px solid #000;
+	background-color: #000;
+	border-bottom: 4px solid #f04661;
 	overflow: hidden;
 	z-index: 1001;
 	transition-property: all;
@@ -56,7 +56,7 @@ body {
 .search-block .search-close {
 	margin: 15px 30px;
 	padding: 10px 15px;
-	color: #f1a744;
+	color: #f04661;
 	font-size: 18px;
 	font-weight: 300;
 	position: absolute;
