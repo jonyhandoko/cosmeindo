@@ -2,12 +2,12 @@
 	include('header.php');
 ?>
 
-			<div class="container-fluid">
+			<div class="container-fluid space">
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="form-login">
 							<div class="greet">
-								<h3>HELLO VALUE CUSTOMER</h3>
+								<h3 class="text-uppercase">Hello Value Customer</h3>
 								<p>It Looks Like you wish to order without creating an account. So complete the form address below</p>
 							</div>
 							<?php echo form_open('secure/login', array('class'=>'form-horizontal', 'role'=>'form'))?>
@@ -25,7 +25,7 @@
 									<div class="col-sm-12">
 										<input type="hidden" value="<?php echo $redirect;?>" name="redirect"/>
 										<input type="hidden" value="submitted" name="submitted"/>
-										<button type="submit" class="btn btn-block btn-orange">LOG IN</button>
+										<button type="submit" class="btn btn-block btn-pink text-uppercase">log in</button>
 									</div>
 								</div>
 							</form>
@@ -37,7 +37,7 @@
 					<div class="col-sm-6">
 						<div class="form-register">
 							<div class="greet">
-								<h3>NEW CUSTOMER</h3>
+								<h3 class="text-uppercase">New Customer</h3>
 								<p>It Looks Like you wish to order without creating an account. So complete the form address below</p>
 							</div>
 							<?php echo form_open('secure/register', array('class'=>'form-horizontal', 'role'=>'form')); ?>
@@ -84,7 +84,7 @@
 								</div>
 								<div class="form-group">
 									<div class="col-sm-12">
-									<button type="submit" class="btn btn-block btn-orange">REGISTER</button>
+									<button type="submit" class="btn btn-block btn-pink text-uppercase">register</button>
 									</div>
 								</div>
 							</form>

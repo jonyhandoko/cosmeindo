@@ -3,13 +3,13 @@
 ?>
 
 			<div class="product">
-				<div class="container-fluid">
+				<div class="container-fluid space">
 					<div class="def-temp">
 						<div class="head">
 							<div class="row">
 								<div class="col-xs-12">
-									<img src="images/watchinc/watch.png" class="img-responsive pull-left">
-									<h3 class="title"><span class="orange">PRODUCT</span> DETAILS</h3>
+<!--									<img src="images/watchinc/watch.png" class="img-responsive pull-left">-->
+									<h3 class="title"><span class="text-pink">PRODUCT</span> DETAILS</h3>
 									<ol class="breadcrumb pull-right">
 										<li><a href="<?php echo base_url('/');?>">Home</a></li>
 										<?php foreach($cats as $cat){?>
@@ -160,7 +160,7 @@
 																	<option value="5">5</option>
 																</select>
 															</div>
-															<button type="submit" class="btn btn-orange pull-right">ADD TO CART</button>
+															<button type="submit" class="btn btn-pink pull-right">ADD TO CART</button>
 														</form>
 													</div>
 												</div>
@@ -186,7 +186,7 @@
 							<div class="col-sm-9">
 								<div role="tabpanel">
 									<div class="head gotab">
-										<img src="images/watchinc/watch.png" class="img-responsive pull-left">
+<!--										<img src="images/watchinc/watch.png" class="img-responsive pull-left">-->
 										<ul class="nav nav-tabs as-title" role="tablist">
 											<li role="presentation" class="active"><a href="#details" id="detailstab" aria-controls="details" role="tab" data-toggle="tab">DETAILS</a></li>
 											<li role="presentation"><a href="#deliveryandreturns" aria-controls="deliveryandreturns" role="tab" data-toggle="tab">DELIVERY & RETURNS</a></li>
@@ -249,7 +249,7 @@
 								<div class="head">
 									<div class="row">
 										<div class="col-xs-12">
-											<h3 class="title no-img"><span class="orange">OTHER</span> SUGGESTIONS</h3>
+											<h3 class="title no-img"><span class="text-pink">OTHER</span> SUGGESTIONS</h3>
 										</div>
 									</div>
 								</div>
@@ -290,13 +290,13 @@
 																$date = strtotime(date("Y-m-d"));
 																if (strtotime($productRelated->sale_enable_on) <= $date && strtotime($productRelated->sale_disable_on) > $date):
 															?>
-																<p class="orange price-strike"><?php echo format_currency($productRelated->price); ?></p>
-																<p class="orange price"><?php echo format_currency($productRelated->saleprice); ?></p>
+																<p class="text-pink price-strike"><?php echo format_currency($productRelated->price); ?></p>
+																<p class="text-pink price"><?php echo format_currency($productRelated->saleprice); ?></p>
 															<?php else: ?>
-																<p class="orange price"><?php echo format_currency($productRelated->price); ?></p><br/>
+																<p class="text-pink price"><?php echo format_currency($productRelated->price); ?></p><br/>
 															<?php endif;
 															else: ?>
-																<p class="orange price"><?php echo format_currency($productRelated->price); ?></p><br/>
+																<p class="text-pink price"><?php echo format_currency($productRelated->price); ?></p><br/>
 															<?php endif;?>
 														<?php endif;?>
 													</div>
