@@ -2,28 +2,28 @@
 	include('header.php');
 ?>
 
-			<div class="cart">
+			<div class="cart space">
 				<div class="container-fluid">
 					<div class="arrow-steps">
 						<div class="row">
 							<div class="col-xs-3">
 								<div class="arrow-step active">
-									<p>CART</p>
+									<p class="text-uppercase">cart</p>
 								</div>
 							</div>
 							<div class="col-xs-3">
 								<div class="arrow-step">
-									<p>CHECKOUT</p>
+									<p class="text-uppercase">checkout</p>
 								</div>
 							</div>
 							<div class="col-xs-3">
 								<div class="arrow-step">
-									<p>CONFIRM ORDER</p>
+									<p class="text-uppercase">confirm order</p>
 								</div>
 							</div>
 							<div class="col-xs-3">
 								<div class="arrow-step">
-									<p>THANK YOU</p>
+									<p class="text-uppercase">thank you</p>
 								</div>
 							</div>
 						</div>
@@ -37,7 +37,7 @@
 									<div class="empty">
 										<h2>Your Shopping Bag is Empty</h2>
 										<p>If items in your shopping bag are missing, try signing in to your account to view them.</p>
-										<a href="../" type="button" class="btn btn-orange">GO SHOPPING</a>
+										<a href="../" type="button" class="btn btn-pink text-uppercase">go shopping</a>
 									</div>
 								</div>
 								<div class="col-xs-4">
