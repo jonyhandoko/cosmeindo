@@ -538,6 +538,47 @@ a:focus {
 .thumbs .thumb .desc .name {
 	height: 45px;
 }
+.thumbs .thumb .hover-state {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	overflow: hidden;
+	padding: 10px;
+	display: none;
+}
+.thumbs .thumb:hover .hover-state {
+	display: table;
+}
+.thumbs .thumb .hover-state .state-block {
+	height: 300px;
+  display: table-cell;
+  vertical-align: middle;
+ }
+.thumbs .thumb .hover-state .btn-like {
+	background-color: transparent;
+	border-color: transparent;
+	color: #FFF;
+	font-size: 36px;
+}
+.thumbs .thumb .hover-state .btn-default.active {
+	color: #cc3333;
+	-webkit-box-shadow: none;
+	box-shadow: none
+}
+.thumbs .thumb .hover-state p {
+	color: #FFF;
+	display: none;
+}
+.thumbs .thumb .hover-state a {
+	display: block;
+	color: #FFF;
+	font-size: 16px;
+}
+
 
 .owl-banner {
 	margin: 0 auto;

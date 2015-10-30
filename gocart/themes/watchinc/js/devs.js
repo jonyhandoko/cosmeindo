@@ -50,4 +50,13 @@
       $(this).parent().next().text(this.value + ' Stars');
   });
 
+  $('.thumb').on('click', '.btn-like', function(e) {
+    e.preventDefault();
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active').next().removeAttr('style');
+    } else {
+      $(this).addClass('active').next().css('display', 'block');
+    }
+  });
+
 }());
