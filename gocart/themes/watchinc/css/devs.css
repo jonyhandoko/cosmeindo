@@ -1,7 +1,7 @@
 /* Devs Stylesheet */
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'century gothic', sans-serif;
 	font-size: 12px;
 }
 a:hover,
@@ -40,9 +40,16 @@ a:focus {
 }
 .btn-orange {
 	color: #ffffff;
-	background-color: #f1a744;
+	background-color: #ed4964;
 	border-radius: 0;
 }
+
+.btn-pink {
+	color: #ffffff;
+	background-color: #ed4964;
+	border-radius: 0;
+}
+
 .btn-orange:hover,
 .btn-orange:focus,
 .btn-orange.focus,
@@ -99,7 +106,7 @@ a:focus {
 	font-family: 'Lato';
 	color: #ffffff;
 	padding: 4px 7px;
-	background-color: #f1a744;
+	background-color: #ed4964;
 }
 
 .def-header .container-fluid,
@@ -171,7 +178,7 @@ a:focus {
 }
 .def-header .navbar-nav > li > .def-dropdown {
 	padding: 15px;
-	border-top: 4px solid #f1a744;
+	border-top: 4px solid #ed4964;
 }
 .def-header .navbar-nav > li > .def-dropdown a {
 	padding: 10px 0;
@@ -189,7 +196,7 @@ a:focus {
 }
 .def-header .navbar-nav > li > .def-dropdown .sub-heading {
 	font-weight: bold;
-	color: #f1a744;
+	color: #ed4964;
 }
 .def-header .navbar-nav > li > .def-dropdown .glyphicon-remove {
 	position: absolute;
@@ -374,13 +381,19 @@ a:focus {
 	}
 }
 
+/*
+.def-content{
+    padding-top: 50px;
+}
+*/
+
 .def-content .banners {
 	margin-bottom: 20px;
 }
 .def-content .banner-big img,
 .def-content .banner-small img {
 	width: 100%;
-	height: 100%;
+	/*height: 100%;*/
 }
 .def-content .banner-small img {
 	height: 159px;
@@ -401,7 +414,7 @@ a:focus {
 		padding-bottom: 8px !important;
 	}
 	.def-header .navbar-nav > li > a.active {
-		color: #f1a744 !important;
+		color: #ed4964 !important;
 	}
 	.def-header .first-block .navbar {
 		min-height: auto;
@@ -452,15 +465,17 @@ a:focus {
 	}
 }
 
+/*
 .oswald {
 	font-family: 'Oswald', sans-serif;
 }
+*/
 .title {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'century gothic', sans-serif;
 }
 
 .title-watch {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'century gothic', sans-serif;
 	margin-bottom: 30px;
 	margin-left: 60px;
 	padding: 8px 0;
@@ -478,10 +493,10 @@ a:focus {
 	border-bottom: 1px solid #dedede;
 }
 .def-temp .orange {
-	color: #f1a744;
+	color: #ed4964;
 }
 .orange {
-	color:  #f1a744;
+	color:  #ed4964;
 }
 .def-temp .pink {
 	color: #cc3333;
@@ -539,14 +554,14 @@ a:focus {
 }
 .owl-banner .owl-theme .owl-controls .owl-buttons div {
 	margin: 0;
-	padding: 0;
+/*	padding: 0;*/
 	font-size: 36px;
 	color: #000000;
 	background-color: #fff;
 	opacity: 1;
 	border-radius: 0;
 	width: 48px;
-	height: 48px;
+	line-height: 48px;
 }
 .owl-banner .owl-theme .owl-controls .owl-buttons .owl-prev {
 	float: left;
@@ -608,7 +623,7 @@ a:focus {
 .featured-tabs .head .title,
 .news .head .title,
 .product .head .title {
-	margin-left: 60px;
+/*	margin-left: 60px;*/
 }
 .featured-tabs .thumbs .thumb .image {
 	/* padding: 25px; */
@@ -642,7 +657,7 @@ a:focus {
 	color: #333;
 }
 .def-temp .head .breadcrumb > .active {
-	color: #f1a744;
+	color: #ed4964;
 }
 .def-temp .head .breadcrumb > li + li:before {
 	color: #333;
@@ -764,7 +779,7 @@ a:focus {
 	display: inline-block;
 }
 .product .describe .description .price {
-	color: #f1a744;
+	color: #ed4964;
 	font-size: 22px;
 	font-weight: bold;
 }
@@ -927,7 +942,7 @@ a:focus {
 	border: 0;
 }
 .def-temp .head .as-title > li.active > a {
-	color: #f1a744;
+	color: #ed4964;
 }
 .def-temp .content .as-title-content {
 	margin-left: 60px;
@@ -1008,10 +1023,10 @@ a:focus {
 	text-align: center;
 }
 .arrow-step.active {
-	background: #f1a744;
+	background: #ed4964 ;
 }
 .arrow-step.active:after {
-	border-left-color: #f1a744;
+	border-left-color: #ed4964;
 }
 .arrow-step.active p {
 	color: #fff;
@@ -1032,13 +1047,13 @@ a:focus {
 .tabs-orange .nav-tabs > li.active > a:focus,
 .tabs-orange .nav-tabs > li.active > a:hover {
 	color: #fff;
-	background-color: #f1a744;
+	background-color: #ed4964 ;
 	border-bottom: 0;
-	border-color: #f1a744;
+	border-color: #ed4964 ;
 }
 .tabs-orange .tab-content {
 	padding: 20px;
-	border: 1px solid #f1a744;
+	border: 1px solid #ed4964 ;
 	margin-top: 1px;
 	margin-left: -1px;
 }
@@ -1247,3 +1262,18 @@ a:focus {
 	background-color: transparent;
 }
 
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.text-pink{
+    color: #ed4964;
+}
+
+.space{
+    padding: 50px 0;
+}
+
+.yotpo .yotpo-bottomline .yotpo-icon-star, .yotpo .yotpo-bottomline .yotpo-icon-half-star, .yotpo .yotpo-bottomline .yotpo-icon-empty-star{
+    color:#ed4964 ;
+}
