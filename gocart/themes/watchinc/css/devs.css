@@ -585,7 +585,7 @@ a:focus {
 }
 .owl-featured .owl-theme .owl-controls .owl-buttons div {
 	margin: 0;
-	padding: 0;
+	padding: 6px;
 	font-size: 36px;
 	color: #000000;
 	background-color: #fff;
