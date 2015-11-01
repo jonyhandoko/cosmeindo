@@ -80,7 +80,7 @@
 											$photo	= '<img class="img-responsive" src="'.base_url('uploads/product/thumb/'.$primary->filename).'" alt="'.$product->seo_title.'"/>';
 										}
 									?>
-									<a href="<?php echo base_url($product->slug);?>" class="thumb">
+									<div class="thumb">
 										<div class="image">
 											<?php echo $photo; ?>
 										</div>
@@ -89,7 +89,14 @@
 											<p class="name"><?php echo $product->name;?></p>
 											<p class="pink"><?php echo format_currency($product->price); ?></p>
 										</div>
-									</a>
+										<div class="hover-state">
+											<div class="state-block">
+												<button class="btn btn-default btn-like"><i class="ion-ios-heart"></i></button>
+												<p>1323 Like</p>
+												<a href="<?php echo base_url($product->slug);?>">DETAIL</a>
+											</div>
+										</div>
+									</div>
 									<?php endforeach; ?>
 									<?php };?>
 								<?php endif; ?>
