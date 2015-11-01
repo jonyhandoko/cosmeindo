@@ -477,7 +477,7 @@ a:focus {
 .title-watch {
 	font-family: 'century gothic', sans-serif;
 	margin-bottom: 30px;
-	margin-left: 60px;
+/*	margin-left: 60px;*/
 	padding: 8px 0;
 	border-bottom: 1px solid #dedede;
 }
@@ -626,7 +626,7 @@ a:focus {
 }
 .owl-featured .owl-theme .owl-controls .owl-buttons div {
 	margin: 0;
-	padding: 0;
+	padding: 6px;
 	font-size: 36px;
 	color: #000000;
 	background-color: #fff;
@@ -1317,4 +1317,27 @@ a:focus {
 
 .yotpo .yotpo-bottomline .yotpo-icon-star, .yotpo .yotpo-bottomline .yotpo-icon-half-star, .yotpo .yotpo-bottomline .yotpo-icon-empty-star{
     color:#ed4964 ;
+}
+
+
+@font-face {
+    font-family: 'danielregular';
+    src: url('../fonts/daniel-webfont.eot');
+    src: url('../fonts/daniel-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/daniel-webfont.woff2') format('woff2'),
+         url('../fonts/daniel-webfont.woff') format('woff'),
+         url('../fonts/daniel-webfont.ttf') format('truetype'),
+         url('../fonts/daniel-webfont.svg#danielregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.section-title{
+    font-family: 'danielregular';
+    background: no-repeat url(../img/splash_pink.jpg);
+    font-size: 20px;
+    color:#fff;
+    padding: 20px;
+    margin: 10px 0;
+    line-height: 36px;
 }

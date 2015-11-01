@@ -11,13 +11,13 @@ body {
 	padding-bottom: 6px;
 }
 #category .navbar-nav > .open > a {
-	background-color: #f1a744 !important;
+	background-color: #ed4964 !important;
 	color: #fff !important;
 	border-radius: 4px;
 }
 .open .arrow {
 	border: solid transparent;
-	border-bottom-color: #f1a744;
+	border-bottom-color: #ed4964;
 	border-width: 11px;
 	position: absolute;
 	bottom: 0;
@@ -121,7 +121,7 @@ body {
 }
 
 .blog .excerpt a:hover{
-	color: #f1a744 !important;
+	color: #ed4964 !important;
 }
 
 .filter .context-filter:last-child {
@@ -147,7 +147,7 @@ body {
 	color: #666;
 }
 .context-filter .content-filter li a:hover {
-	color: #f1a744;
+	color: #ed4964;
 }
 
 .filter-product {
@@ -163,10 +163,12 @@ body {
 	display: inline;
 }
 .filter-box {
-	border: 1px solid #666;
-	color: black;
+/*	border: 1px solid #666;*/
+	color: white;
 	padding: 5px 10px;
 	margin: 0 5px;
+    line-height: 24px;
+    background: #ed4964;
 }
 .btn-clear {
 	background-color: #000;

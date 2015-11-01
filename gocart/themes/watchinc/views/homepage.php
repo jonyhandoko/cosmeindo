@@ -52,7 +52,8 @@
 						<div class="head">
 							<div class="row">
 								<div class="col-xs-12">
-									<img src="images/watchinc/title/make-up.jpg" class="img-responsive pull-left">
+<!--									<img src="images/watchinc/title/make-up.jpg" class="img-responsive pull-left">-->
+                                    <div class="section-title">Make Up</div>
 								</div>
 							</div>
 						</div>
@@ -110,7 +111,8 @@
 						<div class="head">
 							<div class="row">
 								<div class="col-xs-12">
-									<img src="images/watchinc/title/make-up.jpg" class="img-responsive pull-left">
+<!--									<img src="images/watchinc/title/make-up.jpg" class="img-responsive pull-left">-->
+                                    <div class="section-title">Make Up</div>
 								</div>
 							</div>
 						</div>
