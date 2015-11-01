@@ -3,11 +3,11 @@
 ?>
 
 			<div class="category">
-				<div class="container-fluid">
+				<div class="container-fluid space">
 					<div class="col-sm-3">
 						<div class="filter">
 							<div class="head-filter">
-								<img src="<?php echo base_url('images/watchinc/watch.png');?>" class="img-responsive pull-left">
+<!--								<img src="<?php echo base_url('images/watchinc/watch.png');?>" class="img-responsive pull-left">-->
 								<h4 class="title-watch"><span class="orange">FILTER</span> BY</h4>
 							</div>
 							<div class="context-filter">
@@ -59,7 +59,7 @@
 						</div>
 						<div class="filter">
 							<div class="head-filter">
-								<img src="<?php echo base_url('images/watchinc/watch.png');?>" class="img-responsive pull-left">
+<!--								<img src="<?php echo base_url('images/watchinc/watch.png');?>" class="img-responsive pull-left">-->
 								<h4 class="title-watch"><span class="orange">PROMO</span> WATCHES</h4>
 							</div>
 							<div class="context-filter">
@@ -79,7 +79,7 @@
 					<div class="col-sm-9">
 						<div class="head-temp">
 							<div class="head-banner">
-								<img src="<?php echo base_url('images/watchinc/watch.png');?>" class="img-responsive pull-left">
+<!--								<img src="<?php echo base_url('images/watchinc/watch.png');?>" class="img-responsive pull-left">-->
 								<?php if ($page_title=="New Arrivals" || $page_title=="Sale"):?>
 									<h4 class="title-watch"><span class="orange">PRODUCT</span> WATCHES</h4>
 								<?php elseif ($page_title=="Search"):?>
