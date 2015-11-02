@@ -844,7 +844,7 @@ a:focus {
 }
 .product .describe .description .actions {
 	padding: 20px;
-	background-color: #FCF8E3;
+	background-color: #FEF6F7;
 }
 .product .describe .share .breadcrumb {
 	padding: 15px 0;
@@ -987,6 +987,7 @@ a:focus {
 }
 .def-temp .content .as-title-content {
 	margin-left: 60px;
+	padding: 20px 15px;
 }
 .def-temp .content .as-title-content .section {
 	padding: 4px 0;
