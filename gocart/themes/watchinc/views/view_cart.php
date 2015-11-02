@@ -41,7 +41,7 @@
 									</div>
 								</div>
 								<div class="col-xs-4">
-									<img class="img-responsive center-block" src="<?php echo base_url('/images/watchinc/cart-empty.png');?>">
+									<img class="img-responsive center-block" src="<?php echo base_url('/images/watchinc/cart-empty.jpg');?>">
 								</div>
 								<div class="col-xs-1"></div>
 							</div>

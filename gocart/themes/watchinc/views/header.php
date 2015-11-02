@@ -43,7 +43,7 @@
 							<ul class="nav navbar-nav navbar-right">
 								<li><a id="search"><i class="header-icon icon ion-ios-search-strong"></i>SEARCH</a></li>
 								<li><a href="<?php echo base_url('/cart/view_cart');?>"><i class="header-icon icon ion-bag"></i>SHOPPING CART</a></li>
-								<li><span class="number-indicator">20</span></li>
+								<li><span class="number-indicator"><?php echo $this->go_cart->total_items();?></span></li>
 							</ul>
 						</div>
 					</nav>
