@@ -1194,10 +1194,10 @@ a:focus {
 	min-width: 180px;
 	font-size: 20px;
 	font-weight: 300;
-}
+} /*
 .cart .empty-cart img {
 	margin-bottom: 40px;
-}
+} */
 
 .checkout,
 .order-summary {
@@ -1301,6 +1301,19 @@ a:focus {
 }
 .order-summary .cart .view-cart .panel .panel-footer {
 	background-color: transparent;
+}
+
+.address-item {
+	position: relative;
+	background-color: #EEE;
+	margin-top: 20px;
+	padding: 10px 15px;
+	border: 1px solid #E0E0E0;
+}
+.address_toolbar .btn {
+	position: absolute;
+	right: 1px;
+	margin-top: -31px;
 }
 
 .text-uppercase{
