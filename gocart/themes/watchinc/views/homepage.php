@@ -1,3 +1,4 @@
+
 <?php
 	include('header.php');
 ?>
@@ -80,7 +81,7 @@
 											$photo	= '<img class="img-responsive" src="'.base_url('uploads/product/thumb/'.$primary->filename).'" alt="'.$product->seo_title.'"/>';
 										}
 									?>
-									<div class="thumb">
+									<a href="<?php echo base_url($product->slug);?>" class="thumb">
 										<div class="image">
 											<?php echo $photo; ?>
 										</div>
@@ -89,14 +90,7 @@
 											<p class="name"><?php echo $product->name;?></p>
 											<p class="pink"><?php echo format_currency($product->price); ?></p>
 										</div>
-										<div class="hover-state">
-											<div class="state-block">
-												<button class="btn btn-default btn-like"><i class="ion-ios-heart"></i></button>
-												<p>1323 Like</p>
-												<a href="<?php echo base_url($product->slug);?>">DETAIL</a>
-											</div>
-										</div>
-									</div>
+									</a>
 									<?php endforeach; ?>
 									<?php };?>
 								<?php endif; ?>
@@ -111,8 +105,8 @@
 						<div class="head">
 							<div class="row">
 								<div class="col-xs-12">
-<!--									<img src="images/watchinc/title/make-up.jpg" class="img-responsive pull-left">-->
-                                    <div class="section-title">Make Up</div>
+									<!-- <img src="images/watchinc/title/make-up.jpg" class="img-responsive pull-left"> -->
+                  <div class="section-title">Make Up</div>
 								</div>
 							</div>
 						</div>
@@ -139,7 +133,7 @@
 										}
 									?>
 									<div class="col-sm-15 col-xs-6 col-xx">
-										<a href="<?php echo base_url($menwatch->slug);?>" class="thumb">
+										<div class="thumb">
 											<div class="image">
 												<?php echo $photo; ?>
 											</div>
@@ -148,7 +142,14 @@
 												<p class="name"><?php echo $menwatch->name;?></p>
 												<p class="pink"><?php echo format_currency($menwatch->price); ?></p>
 											</div>
-										</a>
+											<div class="hover-state">
+												<div class="state-block">
+													<button class="btn btn-default btn-like"><i class="ion-ios-heart"></i></button>
+													<p>1323 Like</p>
+													<a href="<?php echo base_url($menwatch->slug);?>">DETAIL</a>
+												</div>
+											</div>
+										</div>
 									</div>
 									<?php endforeach; ?>
 								<?php endif; ?>

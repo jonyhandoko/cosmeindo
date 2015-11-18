@@ -435,6 +435,11 @@ a:focus {
 		border-color: #ed4964;
 		cursor: pointer;
 	}
+	.def-header .first-block .navbar-nav > li > .disabled:hover,
+	.def-header .first-block .navbar-nav > li > .disabled:focus {
+		color: #FFF;
+		pointer-events: none;
+	}
 	.def-header .first-block .navbar-nav > li > .bordered-menu {
     margin: 3px 8px;
     border: 1px solid #fff;
@@ -547,7 +552,7 @@ a:focus {
 	left: 0;
 	text-align: center;
 	overflow: hidden;
-	padding: 10px;
+	padding: 10px 10px 0;
 	display: none;
 }
 .thumbs .thumb:hover .hover-state {
