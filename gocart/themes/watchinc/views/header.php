@@ -35,10 +35,15 @@
 					<nav class="navbar navbar-default navbar-static-top">
 						<div class="navbar-collapse collapse">
 							<ul class="nav navbar-nav navbar-left">
-								<li><a href="<?php echo base_url('/secure/login');?>" class="bordered-menu">SIGN IN</a></li>
-								<li><a href="<?php echo base_url('/secure/login');?>" class="bordered-menu">REGISTER</a></li>
-								<li><a href="<?php echo base_url('/secure/my_account');?>">MY ACCOUNT</a></li>
-								<li><a href="my_wishlist">MY WISH LIST</a></li>
+								<?php if($this->Customer_model->is_logged_in(false, false)):?>
+									<li><a class="disabled">WELCOME, <?php echo strtoupper($this->customer['firstname']);?></a></li>
+									<li><a href="<?php echo base_url('/secure/my_account');?>">MY ACCOUNT</a></li>
+									<li><a href="my_wishlist">MY WISH LIST</a></li>
+									<li><a href="<?php echo base_url('/secure/logout');?>" class="bordered-menu">SIGN OUT</a></li>
+								<?php else:?>
+									<li><a href="<?php echo base_url('/secure/login');?>" class="bordered-menu">SIGN IN</a></li>
+									<li><a href="<?php echo base_url('/secure/login');?>" class="bordered-menu">REGISTER</a></li>
+								<?php endif;?>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
 								<li><a id="search"><i class="header-icon icon ion-ios-search-strong"></i>SEARCH</a></li>
