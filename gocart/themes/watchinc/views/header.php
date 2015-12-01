@@ -47,8 +47,46 @@
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
 								<li><a id="search"><i class="header-icon icon ion-ios-search-strong"></i>SEARCH</a></li>
-								<li><a href="<?php echo base_url('/cart/view_cart');?>"><i class="header-icon icon ion-bag"></i>SHOPPING CART</a></li>
-								<li><span class="number-indicator"><?php echo $this->go_cart->total_items();?></span></li>
+								<li class="dropdown">
+									<a class="dropdown-toggle cart-anchor" data-toggle="dropdown" role="button" aria-expanded="false">
+										<i class="header-icon icon ion-bag"></i>SHOPPING CART
+										<span class="number-indicator"><?php echo $this->go_cart->total_items();?></span>
+									</a>
+									<ul class="dropdown-menu def-dropdown" role="menu">
+										<?php
+										$grandtotal = 0;
+										$subtotal = 0;
+										foreach ($this->go_cart->contents() as $cartkey=>$product_cart):?>
+											<li>
+												<a href="">
+													<div class="media">
+														<div class="media-left">
+															<img class="media-object" width="70" src="<?php echo base_url('uploads/product/thumb/'.$product_cart['images']);?>">
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading"><?php echo $product_cart['name']; ?></h5>
+															<p class="sub-heading"><?php echo $product_cart['quantity'] ?> X <?php echo format_currency($product_cart['base_price']);   ?></p>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="divider"></li>
+										<?php endforeach; ?>
+										<li class="total">
+											<div class="separator">
+												<div class="row">
+													<div class="col-xs-5">
+														<p>SUBTOTAL</p>
+													</div>
+													<div class="col-xs-7">
+														<p class="text-right"><b><?php echo format_currency($this->go_cart->subtotal());?></b></p>
+													</div>
+												</div>
+											</div>
+											<button type="submit" onclick="window.location='<?php echo base_url('/cart/view_cart');?>';" class="btn btn-orange btn-block">CHECKOUT</button>
+										</li>
+									</ul>
+								</li>
 							</ul>
 						</div>
 					</nav>
