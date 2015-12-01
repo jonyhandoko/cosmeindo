@@ -568,7 +568,11 @@ a:focus {
 	font-weight: bold;
 }
 .thumbs .thumb .desc .name {
-	height: 45px;
+	height: 44px;
+	display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .thumbs .thumb .hover-state {
 	background-color: rgba(0, 0, 0, 0.5);
